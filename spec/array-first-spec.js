@@ -9,7 +9,7 @@ describe("arrayfun", function(){
 
     var result = arrayfun.first(testArray);
     
-    expect (result).toBe(1);
+    expect (result).toEqual(1);
   });
 
   describe("arrayfun", function() {

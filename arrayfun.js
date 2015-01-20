@@ -26,7 +26,45 @@ module.exports = {
 
     return Math.min.apply(null,testArray);
 
-  }
+  },
 
+  intersect : function ( a1, a2 ) { 
+
+    var interArray = [];
+    var arrayA = 0;
+    var arrayB = 0;  
   
-};
+    for (var i = 0; i < a1.length; i++){
+      arrayA = a1[i];
+           
+      for (var j = 0; j < a2.length; j++){
+        arrayB = a2[j];
+              
+        if (arrayA === arrayB){
+          interArray.push(arrayA); 
+        }     
+      }
+    }
+    return (interArray);
+  },
+ 
+  difference : function (a, b) {
+
+    var arr = []; 
+    var diffArray=[];
+    for(var i = 0;i < a.length;i++)
+      arr[a[i]] = true;
+  
+    for(var j = 0;j < b.length;j++){
+      if(arr[b[j]]) delete arr[b[j]];
+    else arr[b[j]] = true;
+    }
+ 
+    for(var k in arr)
+      diffArray.push(Number(k));
+    return(diffArray);
+}
+  
+
+
+};  //end of module exports
