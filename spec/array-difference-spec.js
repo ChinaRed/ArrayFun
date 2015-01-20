@@ -15,4 +15,3 @@ describe("arrayDiff", function(){
 }); 
 
  
-//a1[i]  
