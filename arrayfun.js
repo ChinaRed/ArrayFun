@@ -63,21 +63,25 @@ module.exports = {
     for(var k in arr)
       diffArray.push(Number(k));
     return(diffArray);
-    },
+  },
 
   unique : function (array) {
 
     var a = [];
     var b = [];
     for (var i = 0; i < array.length; i++) {
-        a[array[i]] = array[i];
+      a[array[i]] = array[i];
     }
     for (var c in a) {
-        b.push(Number(c));
+      b.push(Number(c));
     }
-      return b;
+    return b;
   },
   
+  Contains : function (array) {
 
+  }
 
 };  //end of module exports
+
+//test 

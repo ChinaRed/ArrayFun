@@ -6,7 +6,6 @@ describe("arrayUnique", function(){
       
     var array = [1, 1, 2, 2, 3, 4, 5, 5, 5, 7, 8];
     
-    
     var result = arrayUnique.unique(array);
     
     expect(result).toEqual([1,2,3,4,5,7,8]);
